@@ -1,0 +1,380 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST ""res\\\\wacontrol.exe.manifest""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\wacontrol.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 187, 109
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,88,50,14
+    CTEXT           "WinAmp Network Controller v1.0\n\n(c) Copyright 2004\nEnergon Software",
+                    IDC_STATIC,25,57,78,41
+    ICON            IDR_MAINFRAME,IDC_STATIC,55,26,20,20
+    GROUPBOX        "",IDC_STATIC,7,7,115,95
+END
+
+IDD_MAINDLG DIALOGEX 0, 0, 187, 151
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WinAmp Network Controller"
+MENU IDR_MAINFRAME
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Stuff Goes Here Some Day",IDC_STATIC,50,71,86,8
+END
+
+IDD_CONNECT_DIALOG DIALOGEX 0, 0, 186, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Connect"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Connect",IDOK,7,58,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,58,50,14
+    LTEXT           "Server:",IDC_STATIC,14,18,25,8
+    LTEXT           "Port:",IDC_STATIC,14,35,17,8
+    GROUPBOX        "Options",IDC_STATIC,7,7,172,45
+    PUSHBUTTON      "Default",IDC_DEFAULT,69,58,50,14
+    EDITTEXT        IDC_SERVER_EDIT,41,15,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT_EDIT,41,32,40,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_PLAYLIST_DIALOG DIALOGEX 0, 0, 186, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Load Playlist"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,50,50,14
+    GROUPBOX        "Options",IDC_STATIC,7,7,172,36
+    LTEXT           "Filename:",IDC_STATIC,14,19,32,8
+    EDITTEXT        IDC_FILENAME_EDIT,48,17,123,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_CONNECT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_PLAYLIST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Energon Software"
+            VALUE "FileDescription", "WinAmp Network Controller"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "wacontrol"
+            VALUE "LegalCopyright", "Copyright 2004"
+            VALUE "OriginalFilename", "wacontrol.exe"
+            VALUE "ProductName", "WinAmp Network Controller"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENUEX 
+BEGIN
+    POPUP "&File",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "C&onnect...",                 32779,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Disconnect",                 32780,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit\tCtrl+Q",               57665,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&WinAmp",                        65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Execute\tCtrl+E",            32789,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Close\tCtrl+C",              32790,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Reset\tCtrl+R",              32791,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Load Playlist...\tCtrl+L",   ID_WINAMP_LOADPLAYLIST,
+        MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Play\tCtrl+P",               32776,MFT_STRING,MFS_ENABLED
+        MENUITEM "Play CD...",                  ID_WINAMP_PLAYCD,MFT_STRING,
+        MFS_ENABLED
+        MENUITEM "P&ause\tCtrl+A",              ID_WINAMP_PAUSE,MFT_STRING,
+        MFS_ENABLED
+        MENUITEM "S&top\tCtrl+T",               32775,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Pre&vious Song\tCtrl+V",      ID_WINAMP_PREVIOUSSONG,
+        MFT_STRING,MFS_ENABLED
+        MENUITEM "&Next Song\tCtrl+N",          ID_WINAMP_NEXTSONG,
+        MFT_STRING,MFS_ENABLED
+        MENUITEM "&FFW 5 seconds\tCtrl+F",      ID_WINAMP_FFW5,MFT_STRING,
+        MFS_ENABLED
+        MENUITEM "Re&wind 5 Seconds\tCtrl+W",   ID_WINAMP_REWIND5,MFT_STRING,
+        MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Volume &Up\tCtrl+U",          ID_WINAMP_VOLUMEUP,
+        MFT_STRING,MFS_ENABLED
+        MENUITEM "Volume &Down\tCtrl+D",        ID_WINAMP_VOLUMEDOWN,
+        MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Help",                          65535,
+    MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "&About...",                   57664,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_TRAY_MENU MENU 
+BEGIN
+    POPUP "&Winamp"
+    BEGIN
+        MENUITEM "C&onnect...",                 32779
+        MENUITEM "&Disconnect",                 32780
+        MENUITEM SEPARATOR
+        MENUITEM "&Execute WinAmp",             ID_WINAMP_EXECUTE
+        MENUITEM "&Close WinAmp",               32790
+        MENUITEM "&Reset WinAmp",               32791
+        MENUITEM SEPARATOR
+        MENUITEM "&Load Playlist...",           ID_WINAMP_LOADPLAYLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Play Song",                  32776
+        MENUITEM "Play CD...",                  ID_WINAMP_PLAYCD
+        MENUITEM "P&ause Song",                 32798
+        MENUITEM "S&top Song",                  32775
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&vious Song",              32799
+        MENUITEM "&Next Song",                  32800
+        MENUITEM "FFW 5 Seconds",               ID_WINAMP_FFW5
+        MENUITEM "Rewind 5 Seconds",            ID_WINAMP_REWIND5
+        MENUITEM SEPARATOR
+        MENUITEM "Volume &Up",                  ID_WINAMP_VOLUMEUP
+        MENUITEM "&Volume Down",                ID_WINAMP_VOLUMEDOWN
+        MENUITEM SEPARATOR
+        MENUITEM "R&estore",                    ID_FILE_RESTORE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "Q",            ID_APP_EXIT,            VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_WINAMP_CLOSE,        VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_WINAMP_EXECUTE,      VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_WINAMP_LOADPLAYLIST, VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_WINAMP_NEXTSONG,     VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_WINAMP_PAUSE,        VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_WINAMP_PLAY,         VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_WINAMP_PREVIOUSSONG, VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_WINAMP_RESET,        VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_WINAMP_STOP,         VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_WINAMP_VOLUMEDOWN,   VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_WINAMP_FFW5,         VIRTKEY, CONTROL, NOINVERT
+    "W",            ID_WINAMP_REWIND5,      VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_WINAMP_VOLUMEUP,     VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "WinAmp Network Controller"
+    IDS_ERR_WINSOCK         "Could not initialize ws2_32.dll!"
+    IDS_ERR_CREATE_WINDOW   "Main dialog creation failed!"
+    IDS_ERR_LOG_REDIRECT    "Could not redirect log file!"
+    IDS_ERR_LOAD_CONFIG     "Could not load configuration!"
+    IDS_ERR_SAVE_CONFIG     "Could not save configuration!"
+    IDS_ERR_CONNECT         "Could not connect to server!"
+    IDS_ERR_SELECT          "Error selecting sockets!"
+    IDS_ERR_RECVPACKET      "Error recieving packet!"
+    IDS_ERR_PACKET          "Invalid packet recieved!"
+    IDS_ERR_SENDPACKET      "Error sending packet!"
+    IDS_ERR_PORTRANGE       "Enter a port between 0 and 9999!"
+    IDS_ERR_SERVER_DISCONNECTED "The server has disconnected!"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quits the application\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINAMP_STOP          "Stops the current song in WinAmp\nStop Song"
+    ID_WINAMP_PLAY          "Quits the application\nExit"
+    ID_FILE_CONNECT         "Connect to server\nConnect"
+    ID_FILE_DISCONNECT      "Disconnect from server\nDisconnect"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINAMP_EXECUTE       "Executes WinAmp\nExecute WinAmp"
+    ID_WINAMP_CLOSE         "Closes WinAmp\nClose WinAmp"
+    ID_WINAMP_RESET         "Resets WinAmp\nReset WinAmp"
+    ID_WINAMP_PAUSE         "Pauses the current song in WinAmp\nPause Song"
+    ID_WINAMP_PREVIOUSSONG  "Plays the previous song in WinAmp\nPrevious Song"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINAMP_NEXTSONG      "Plays the next song in WinAmp\nNext Song"
+    ID_WINAMP_LOADPLAYLIST  "Loads a WinAmp playlist\nLoad Playlist"
+    ID_WINAMP_PLAYCD        "Plays a CD in WinAmp\nPlay CD"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINAMP_FFW5          "Fast forwards 5 seconds in WinAmp\nFast Forward 5 Seconds"
+    ID_WINAMP_REWIND5       "Rewinds 5 seconds in WinAmp\nRewind 5 Seconds"
+    ID_WINAMP_VOLUMEUP      "Turns the volume up in WinAmp\nVolume Up"
+    ID_WINAMP_VOLUMEDOWN    "Turns the volume down in WinAmp\nVolume Down"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "res\\wacontrol.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
